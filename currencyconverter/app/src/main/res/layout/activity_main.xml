@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c3335"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="411dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:background="#333945"
+        android:text="0.00"
+        android:textAlignment="center"
+
+        android:textColor="#fff"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="36dp"
+        android:background="#333945"
+        android:ems="10"
+        android:textColor="#fff"
+        android:hint="₹"
+        android:inputType="number"
+
+
+        android:textAlignment="center"
+        android:textColorHint="#ffff"
+        android:textSize="45sp"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="28dp"
+        android:background="#535c68"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#2f383f"
+            android:text=" € "
+            android:id="@+id/euro"
+            android:textColor="#7b8788"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#2f383f"
+            android:id="@+id/dollar"
+            android:text=" $ "
+            android:textColor="#7b8788"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#2f383f"
+            android:id="@+id/pound"
+            android:text=" £"
+            android:textColor="#7b8788"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:background="#535c68"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="8dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#2f383f"
+            android:text="¥ "
+            android:id="@+id/yen"
+            android:textColor="#7b8788"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#2f383f"
+            android:text=" ‎د.ك"
+            android:id="@+id/quithdin"
+            android:textColor="#7b8788"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#2f383f"
+            android:text=" BTC"
+            android:id="@+id/bitcoin"
+            android:textColor="#7b8788"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:background="#535c68"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteX="0dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2f383f"
+            android:textColor="#7b8788"
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:text="₽"
+            android:id="@+id/rubel"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2f383f"
+            android:textColor="#7b8788"
+            android:textSize="30sp"
+            android:id="@+id/ansdollar"
+            android:layout_margin="5dp"
+            android:text="A$"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2f383f"
+            android:textColor="#7b8788"
+            android:textSize="30sp"
+            android:id="@+id/candollar"
+            android:layout_margin="5dp"
+            android:text="C$"
+
+            />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
